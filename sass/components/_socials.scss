@@ -26,19 +26,19 @@
     opacity: 0.9;
     background-color: $footer-socials-color;
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
 
 
     &:hover,
     &:focus{
-    background-color: $accent-color;
+    background-color: $dodger-blue;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   }
   
   .footer-socials__icon{
-   fill: $background-color;
+   fill: $white;
   }
 
 // Team-section socials
@@ -62,26 +62,26 @@
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: $background-color;
+    background-color: $white;
     border-radius:50%;
     
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
 
 
     &:hover,
     &:focus{
-      background-color: $accent-color;
+      background-color: $dodger-blue;
     }
 
     &:hover .team__socials-icon,
     &:focus .team__socials-icon{
-      fill: $background-color;
+      fill: $white;
     }
   }
     
   .team__socials-icon{
-    fill: $icon-color;
+    fill: $bombay;
   }
   

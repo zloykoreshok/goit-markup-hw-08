@@ -21,12 +21,12 @@
     border-radius: 4px;
     
     box-shadow: $box-shadow;
-    color: $background-color;
-    background-color: $accent-color;
+    color: $white;
+    background-color: $dodger-blue;
   
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   }
 
 // Modal-wrapper close button
@@ -49,15 +49,15 @@
     outline: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: $background-color;
+    background-color: $white;
     
     transition-property: color;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
 
     &:hover,
     &:focus{
-      border: 1px solid $accent-color;
+      border: 1px solid $dodger-blue;
     
     }
   }
@@ -68,7 +68,7 @@
 
     .modal-btn:hover &,
     .modal-btn:focus &{
-      fill: $accent-color;
+      fill: $dodger-blue;
     }
   }
 
@@ -93,11 +93,11 @@
     display: inline-block;
   
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   
-    color: $background-color;
-    background-color: $accent-color;
+    color: $white;
+    background-color: $dodger-blue;
     box-shadow: $box-shadow;
   }
 
@@ -116,18 +116,18 @@
   
     padding: 6px 22px 6px 22px;
   
-    transition-property: color, $background-color, $box-shadow;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-property: color, background-color, $box-shadow;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   
-    color: $title-text-color;
-    background-color: $team-n-buttons-color;
+    color: $tuna;
+    background-color: $whisper;
 
     &:hover,
     &:focus{
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      background-color: $accent-color;
-      color: $background-color;
+      background-color: $dodger-blue;
+      color: $white;
     } 
   }
   
@@ -143,14 +143,14 @@
     padding: 6px 22px 6px 22px;
     cursor: pointer;
     
-    color: $background-color;
-    background-color: $accent-color;
+    color: $white;
+    background-color: $dodger-blue;
 
     &:hover,
     &:focus{
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      background-color: $accent-color;
-      color: $background-color;
+      background-color: $dodger-blue;
+      color: $white;
     } 
   }
 
@@ -173,13 +173,13 @@
     align-items: center;
   
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
-    color: $background-color;
-    background-color: $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    color: $white;
+    background-color: $dodger-blue;
   }
   
   .icon-send{
-    fill: #FFFFFF;
+    fill: $white;
     margin-left: 10px;
   }

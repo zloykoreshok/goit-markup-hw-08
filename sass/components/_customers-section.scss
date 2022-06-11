@@ -19,21 +19,21 @@
      align-items: center;
     
      outline: transparent;
-     border: 1px solid $icon-color;
+     border: 1px solid $bombay;
      border-radius: 4px;
   
      background-size:  contain;
      background-repeat: no-repeat;
      background-position: center; 
-     fill: $icon-color;
+     fill: $bombay;
   
      transition-property: fill, border-color;
-     transition-duration: $transition-duration;
-     transition-timing-function: $transition-timing-function; 
+     transition-duration: $duration;
+     transition-timing-function: $timing; 
 
      &:hover,
      &:focus{
-       fill: $accent-color;
-       border-color: $accent-color;
+       fill: $dodger-blue;
+       border-color: $dodger-blue;
      }
   }

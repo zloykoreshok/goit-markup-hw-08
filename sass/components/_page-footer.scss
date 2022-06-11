@@ -2,7 +2,7 @@
     padding-top:60px;
     padding-bottom: 60px;
    
-    background-color: $hero-footer-background-color;
+    background-color: $tuna;
   }
   
   .footer__info-container{
@@ -23,11 +23,11 @@
     margin-bottom: 20px;
     display: block;
     
-    color: $accent-color;
+    color: $dodger-blue;
   }
   
   .footer__logo-color{
-    color: $background-color;
+    color: $white;
   }
   
   .footer__list{
@@ -45,7 +45,7 @@
     font-style: normal;
     line-height: 24px;
   
-    color: $background-color;
+    color: $white;
   }
   
   .footer__adress-item{
@@ -58,13 +58,13 @@
     letter-spacing: 0.03em;
   
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;  
+    transition-duration: $duration;
+    transition-timing-function: $timing;  
     color: $footer-links-color; 
 
     &:hover, 
     &:focus{
-      color: $accent-color;
+      color: $dodger-blue;
     }
   }
   
@@ -79,7 +79,7 @@
     line-height: 16px;
     
     margin-bottom: 20px;
-    color: $background-color;
+    color: $white;
   }
   
  

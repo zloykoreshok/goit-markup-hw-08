@@ -27,8 +27,8 @@
     text-decoration: none;
   
     transition-property: box-shadow;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   
     overflow: hidden;
 
@@ -70,7 +70,7 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: $background-color;
+    color: $white;
     
     transition-property: transform;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -93,9 +93,9 @@
   
   .projects__card{
     padding: 20px 24px;
-    border-left: $border-color solid 1px;
-    border-right: $border-color solid 1px;
-    border-bottom: $border-color solid 1px; 
+    border-left: $gallery solid 1px;
+    border-right: $gallery solid 1px;
+    border-bottom: $gallery solid 1px; 
   }
   
   .projects__customer{
@@ -104,12 +104,12 @@
     line-height: 2;
     letter-spacing: 0.04em;
     margin-bottom: 4px; 
-    color: $title-text-color;
+    color: $tuna;
   }
   
   .projects__description{
     font-size: 16px;
     line-height: 1.85;
     letter-spacing: 0.03em;
-    color: $boulder;
+    color: getColour('boulder');
   }

@@ -8,8 +8,8 @@
     z-index: 1;
   
     transition-property: inherit;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   }
 
   .backdrop.is-hidden{

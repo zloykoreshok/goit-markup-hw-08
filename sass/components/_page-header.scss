@@ -1,5 +1,5 @@
 .header{
-    border-bottom: $border-color solid 1px;
+    border-bottom: $gallery solid 1px;
   }
   
   .header-container{
@@ -22,11 +22,11 @@
     width: 145px;
   
     display: block;
-    color: $accent-color;
+    color: $dodger-blue;
   }
   
   .header-logo__color{
-    color: $title-text-color;
+    color: $tuna;
   }
 
 
@@ -51,14 +51,14 @@
     align-items: center;
     
     transition-property: color;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   
     color: $boulder;
 
     &:hover,
     &:focus{
-      color: $accent-color;
+      color: $dodger-blue;
     }
   }
   
@@ -66,14 +66,14 @@
     margin-right: 10px; 
   
     transition-property: color;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
   
     fill: currentColor;
 
     &:hover,
     &:focus{
-  fill: $accent-color;
+  fill: $dodger-blue;
   }
   }
   
@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
   
-    color: $primary-text-color;
+    color: $boulder;
 
     &:last-child{
       margin-right: 0;
