@@ -6,8 +6,16 @@
     
     align-items: center;
     display: flex;
+
+    @media screen and (max-width: 480px){ 
+  display: none;
+    }
+
   }
   
+
+
+
   .nav__item{
     margin-right: 50px;
 
