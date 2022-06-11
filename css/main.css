@@ -1280,7 +1280,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   line-height: 1.85;
   letter-spacing: 0.03em;
-  color: getColour("boulder");
+  color: #757575;
 }
 
 .submit-btn {
