@@ -416,29 +416,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .features__item {
-  margin-right: 30px;
-  width: 270px;
-}
-
-.features__item:last-child {
-  margin-right: 0;
-}
-
-.features__container {
-  margin-bottom: 30px;
-  background: #F5F4FA;
-  border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 270px;
-  height: 120px;
+  width: 450px;
 }
 
 .features__subtitle {
@@ -447,6 +425,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.15;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #2F303A;
