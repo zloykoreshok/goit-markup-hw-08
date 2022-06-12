@@ -1,15 +1,15 @@
 .nav__list{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    
-    align-items: center;
-    display: flex;
+    display: none;
 
-    @media screen and (max-width: 480px){ 
-  display: none;
-    }
+    @media screen and (min-width: $mobile) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+    
+      align-items: center;
+      display: flex;
+  }
 
   }
   
