@@ -1,87 +1,87 @@
-// Footer socials
+// // Footer socials
 
-.footer-socials__list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0;
-    margin: 0;
-  }
+// .footer-socials__list{
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding-left: 0;
+//     margin: 0;
+//   }
   
-  .footer-socials__item:not(:last-child){
-    margin-right: 10px;
-  }
+//   .footer-socials__item:not(:last-child){
+//     margin-right: 10px;
+//   }
   
-  .footer-socials__link{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+//   .footer-socials__link{
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
   
-    width: 44px;
-    height: 44px;
+//     width: 44px;
+//     height: 44px;
     
-    border-radius:50%;
-    opacity: 0.9;
-    background-color: $footer-socials-color;
-    transition-property: inherit;
-    transition-duration: $duration;
-    transition-timing-function: $timing;
+//     border-radius:50%;
+//     opacity: 0.9;
+//     background-color: $footer-socials-color;
+//     transition-property: inherit;
+//     transition-duration: $duration;
+//     transition-timing-function: $timing;
 
 
-    &:hover,
-    &:focus{
-    background-color: $dodger-blue;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-  }
+//     &:hover,
+//     &:focus{
+//     background-color: $dodger-blue;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+//   }
+//   }
   
-  .footer-socials__icon{
-   fill: $white;
-  }
+//   .footer-socials__icon{
+//    fill: $white;
+//   }
 
-// Team-section socials
+// // Team-section socials
 
-.team__socials-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0; 
-  }
+// .team__socials-list{
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding-left: 0; 
+//   }
   
-  .team__socials-item:not(:last-child){
-    margin-right: 10px;
-  }
+//   .team__socials-item:not(:last-child){
+//     margin-right: 10px;
+//   }
   
-  .team__socials-link{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: $white;
-    border-radius:50%;
+//   .team__socials-link{
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 44px;
+//     height: 44px;
+//     background-color: $white;
+//     border-radius:50%;
     
-    transition-property: inherit;
-    transition-duration: $duration;
-    transition-timing-function: $timing;
+//     transition-property: inherit;
+//     transition-duration: $duration;
+//     transition-timing-function: $timing;
 
 
-    &:hover,
-    &:focus{
-      background-color: $dodger-blue;
-    }
+//     &:hover,
+//     &:focus{
+//       background-color: $dodger-blue;
+//     }
 
-    &:hover .team__socials-icon,
-    &:focus .team__socials-icon{
-      fill: $white;
-    }
-  }
+//     &:hover .team__socials-icon,
+//     &:focus .team__socials-icon{
+//       fill: $white;
+//     }
+//   }
     
-  .team__socials-icon{
-    fill: $bombay;
-  }
+//   .team__socials-icon{
+//     fill: $bombay;
+//   }
   

@@ -5,17 +5,30 @@
 
 .container{
 
-  @media screen and (min-width: $desktop){
-    max-width: 1200px;
-  
     padding-left: 15px;
     padding-right: 15px;
     
     margin-left: auto;
     margin-right: auto; 
    
-  background-color: #F5F4D1;
-}
+  background-color: #98FB9C;
+
+  @media screen and (min-width: $mobile){
+    width: $mobile;
+    background-color: #F5F4D1;
+  }
+
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+    background-color: #F6B4B1;
+  }
+
+  @media screen and (min-width: $desktop){
+    width: $desktop;
+    background-color: #E598FB;
+
+  }
+
   }
 
 
