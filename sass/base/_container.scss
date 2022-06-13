@@ -1,6 +1,6 @@
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
   }
 
 .container{
@@ -11,11 +11,11 @@
     margin-left: auto;
     margin-right: auto; 
    
-  background-color: #98FB9C;
+  // background-color: #98FB9C;
 
   @media screen and (min-width: $mobile){
     width: $mobile;
-    background-color: #F5F4D1;
+    // background-color: #D8C722;
   }
 
   @media screen and (min-width: $tablet){
@@ -38,7 +38,8 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
   
-    margin-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   
     text-align: center;
     color: $tuna;
