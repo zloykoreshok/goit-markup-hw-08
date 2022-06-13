@@ -178,29 +178,29 @@
 
 // //   Footer send-button
 
-// .footer__btn{
-//     font-family: 'Roboto', 'Sans-Serif';
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.6;
-//     border: 0;
-//     border-radius: 4px;
-//     letter-spacing: 0.03em;
-//     text-align: center;
-//     padding: 11px 29px;
-//     cursor: pointer;
-//     margin-left: 12px;
-//     display: flex;
-//     align-items: center;
+.footer__btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 11px 29px;
+    cursor: pointer;
+    // margin-left: 12px;
+    display: flex;
+    align-items: center;
   
-//     transition-property: inherit;
-//     transition-duration: $duration;
-//     transition-timing-function: $timing;
-//     color: $white;
-//     background-color: $dodger-blue;
-//   }
+    transition-property: inherit;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    color: $white;
+    background-color: $dodger-blue;
+  }
   
-//   .icon-send{
-//     fill: $white;
-//     margin-left: 10px;
-//   }
+  .icon-send{
+    fill: $white;
+    margin-left: 10px;
+  }
