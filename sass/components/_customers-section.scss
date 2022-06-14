@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     // flex-direction: column;
      margin: 0 -15px 60px -15px;
+     justify-content: center;
   }
   
   .customers__link{
@@ -40,5 +41,11 @@
      &:focus{
        fill: $dodger-blue;
        border-color: $dodger-blue;
+     }
+
+     @media screen and (min-width: $tablet){
+      width: 226px;
+     }
+      
      }
   }
