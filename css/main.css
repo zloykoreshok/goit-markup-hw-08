@@ -332,8 +332,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header {
-  border-bottom: #ECECEC solid 1px;
   position: relative;
+  border-bottom: #ECECEC solid 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -389,12 +389,19 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.header__contacts-division {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
 .header-menu__menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 480px;
   height: 796px;
   background-color: palegoldenrod;
   padding: 15px;
@@ -406,7 +413,17 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 
+.nav, .header-contacts {
+  height: 40px;
+  width: 50px;
+}
+
+.nav {
+  outline: 1px solid teal;
+}
+
 .header-contacts {
+  outline: 1px solid orange;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
