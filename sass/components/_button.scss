@@ -1,3 +1,22 @@
+// Header Menu Button
+
+.header-menu__btn{
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  border: none;
+  line-height: 0;
+  padding: 0;
+
+  &:hover,
+  focus{
+    fill: $dodger-blue;
+  }
+}
+
+
+
+
 // // Modal-wrapper submit button
 .submit-btn{    
     

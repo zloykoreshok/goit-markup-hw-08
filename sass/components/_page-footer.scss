@@ -12,13 +12,14 @@
   }
   
   .footer__tablet-invite{
+    margin-left: auto;
+    margin-right: auto;
+
   @media screen and (min-width: $tablet) {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  margin-left: auto;
-  margin-right: auto;
-}
+  }
   }
 
 
