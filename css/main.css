@@ -389,13 +389,6 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.header__contacts-division {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
 .header-menu__menu {
   display: none;
   position: absolute;
@@ -411,15 +404,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header-menu__menu.is-open {
   display: block;
-}
-
-.nav, .header-contacts {
-  height: 40px;
-  width: 50px;
-}
-
-.nav {
-  outline: 1px solid teal;
 }
 
 .header-contacts {
