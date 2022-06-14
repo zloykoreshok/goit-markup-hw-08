@@ -11,21 +11,21 @@
     margin-left: auto;
     margin-right: auto; 
    
-  // background-color: #98FB9C;
+
 
   @media screen and (min-width: $mobile){
     width: $mobile;
-    // background-color: #D8C722;
+ 
   }
 
   @media screen and (min-width: $tablet){
     width: $tablet;
-    // background-color: #F0F7E3;
+ 
   }
 
   @media screen and (min-width: $desktop){
     width: $desktop;
-    background-color: #E598FB;
+  
 
   }
 
