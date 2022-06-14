@@ -292,14 +292,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: #F6B4B1;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: #E598FB;
   }
 }
 
@@ -1186,9 +1184,32 @@ h1, h2, h3, h4, h5, h6, p {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__tablet-invite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer__adress-group {
   text-align: center;
   margin: 0 auto 60px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__adress-group {
+    margin-right: 165px;
+  }
 }
 
 .footer__logo {
@@ -1481,5 +1502,11 @@ h1, h2, h3, h4, h5, h6, p {
 .customers__link:hover, .customers__link:focus {
   fill: #2196F3;
   border-color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .customers__link {
+    width: 226px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
