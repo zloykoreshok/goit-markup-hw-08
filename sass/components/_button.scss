@@ -8,14 +8,30 @@
   line-height: 0;
   padding: 0;
 
-  &:hover,
-  focus{
-    fill: $dodger-blue;
-  }
+// display: inline-flex;
+// margin: 0;
+// padding: 0;
+// border: none;
+// background-color: transparent;
+
+
+  // &:hover,
+  // focus{
+  //   fill: $dodger-blue;
+  // }
 }
 
+.header-menu__btn .icon-cross{
+  display: none;
+}
 
+.header-menu__btn.is-open .icon-cross{
+  display: block;
+}
 
+.header-menu__btn.is-open .icon-burger{
+  display: none;
+}
 
 // // Modal-wrapper submit button
 .submit-btn{    

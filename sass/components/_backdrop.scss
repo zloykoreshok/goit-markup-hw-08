@@ -9,7 +9,8 @@
     height: 100%;
     background-color: $backdrop-background;
     z-index: 1;
-  
+    overflow-y: scroll;
+
     transition-property: inherit;
     transition-duration: $duration;
     transition-timing-function: $timing;

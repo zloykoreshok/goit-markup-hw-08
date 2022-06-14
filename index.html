@@ -45,14 +45,31 @@
                   <a class="header-contacts__link" href="tel:+380961111111"><svg class="header-contacts__icon" width="10" height="14"><use href="./images/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a>
                 </li>
               </ul>  
-
+   
+              <!-- Header-button menu -->
               <div class="header-menu">
-                <button class="header-menu__btn" type="button" data-modal-open><svg class="header-menu__btn-icon" width="24" height="16">
-                 <use href="./images/sprite.svg#menu"></use>
+                <button class="header-menu__btn is-open" type="button" aria-expanded="false" data-menu-button>
+                  <svg class="header-menu__btn-icon" width="24" height="16" aria-label="переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/sprite.svg#menu"></use>
+                    <use class="icon-burger" href="./images/sprite.svg#icon-modal-btn"></use>
                </svg></button>
               </div>
+
+              <div class="header-menu__menu" data-menu>
+                Контент меню
+                                </div>
     
-         </div>
+<!-- Header modal wrapper -->
+
+              <!-- <div class="backdrop is-hidden" data-modal>
+                <div class="header__modal-wrapper">
+      
+                  <div role="group" class="header-modal__list">    
+                  </div>
+                 <button class="modal-btn" data-modal-close><svg class="modal-btn-icon"  width="11" height="11"> <use href="./images/sprite.svg#icon-modal-btn"></use></svg></button>  
+                </div>
+              </div> -->
+          </div>
  
       </header>
         
@@ -393,7 +410,7 @@
   <!-- Script -->
       
       <script src="./js/modal.js"></script>
-      <script src="./js/mobile-menu.js"></script>
+      <script src="./js/menu.js"></script>
 
     </body>
 </html>

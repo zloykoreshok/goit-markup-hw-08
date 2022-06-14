@@ -6,3 +6,7 @@ body{
     color: $boulder;
     background-color: $white;
     }
+
+body.modal-open {
+    overflow: hidden; 
+}
