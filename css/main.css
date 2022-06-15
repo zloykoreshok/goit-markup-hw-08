@@ -890,7 +890,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .modal-wrapper {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%);
@@ -898,6 +898,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #FFFFFF;
   width: 450px;
   height: 609px;
+  z-index: 100;
 }
 
 .modal-wrapper__watchword {
@@ -1628,6 +1629,10 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 20;
 }
 
+.header-menu__btn:hover, .header-menu__btn:focus {
+  fill: #2196F3;
+}
+
 .header-menu__btn .icon-cross {
   display: none;
 }
@@ -1701,6 +1706,7 @@ h1, h2, h3, h4, h5, h6, p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 155;
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -1710,6 +1716,7 @@ h1, h2, h3, h4, h5, h6, p {
 .modal-btn-icon {
   position: relative;
   fill: #000000;
+  z-index: 151;
 }
 
 .modal-btn:hover .modal-btn-icon,

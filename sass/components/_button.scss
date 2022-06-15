@@ -10,16 +10,11 @@
   
   position: relative;
   z-index: 20;
-// display: inline-flex;
-// margin: 0;
-// padding: 0;
-// border: none;
-// background-color: transparent;
 
-
-  // &:hover{
-  //   fill: $dodger-blue;
-  // }
+  &:hover,
+  &:focus{
+    fill: $dodger-blue;
+  }
 }
 
 .header-menu__btn .icon-cross{
@@ -90,7 +85,7 @@
     transition-property: color;
     transition-duration: $duration;
     transition-timing-function: $timing;
-
+z-index: 155;
     &:hover,
     &:focus{
       border: 1px solid $dodger-blue;
@@ -101,7 +96,7 @@
   .modal-btn-icon{
     position: relative;
     fill: #000000;
-
+    z-index: 151;
     .modal-btn:hover &,
     .modal-btn:focus &{
       fill: $dodger-blue;
