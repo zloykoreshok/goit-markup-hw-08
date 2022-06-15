@@ -3,10 +3,10 @@
 
     border-bottom: $gallery solid 1px;
     
-    @media screen and (min-width:$tablet) {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    // @media screen and (min-width:$tablet) {
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
   }
   
   .header-container{
@@ -75,15 +75,7 @@
     }
 
 .header-menu__menu{
-  display: none;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 480px;
-  height: 796px;
- 
-
+  
   background-color: palegoldenrod;
   padding: 15px;
 
@@ -93,8 +85,38 @@
   &.is-open{
     display: block;
   }
+
+    @media screen and (max-width:767.98px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    // height: 796px;
+  }
+
+  @media screen and (min-width:$tablet){
+    display: flex;
+    padding: 0;
+    align-items: center;
+  
+  }
+
+
+  
 } 
 
+
+
+.nav{
+  outline: 1px solid teal;
+  
+
+  @media screen and (min-width:$tablet){ 
+    margin-left: 88px;
+  }
+}
 
   .header-contacts{
     outline: 1px solid orange;
@@ -102,27 +124,36 @@
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    
+    @media screen and (min-width:$tablet){
+      margin-left: 84px;
+    
+    }
   
-    margin-left: auto;
+    
   
-    align-items: center;
-    display: flex;     
+    // align-items: center;
+    // display: flex;     
         
-    @media screen and (max-width:767.98px){ 
-      display: none;
-      }
+    // @media screen and (max-width:767.98px){ 
+    //   display: none;
+    //   }
 
-    @media screen and (min-width: $mobile) and (max-width: 1199.98px){
-      flex-direction: column;
-      }
+    // @media screen and (min-width: $mobile) and (max-width: 1199.98px){
+    //   flex-direction: column;
+    //   }
    
   }
-  
-  
+    
+.nav, .header-contacts{
+height: 100%;
+width: 100%;
+}
+
 
   .header-contacts__list{
     text-decoration: none;
-    margin-right: 50px;
+    // margin-right: 50px;
   
     display: flex;
     align-items: center;
@@ -134,10 +165,10 @@
     }
 
     @media screen and (min-width: $mobile) and (max-width: 1199.98px){
-      margin-right: 0;
-      align-items: flex-start;
-      margin-left: auto;
-      margin-right: auto;
+      // margin-right: 0;
+      // align-items: flex-start;
+      // margin-left: auto;
+      // margin-right: auto;
     }
   }
 
@@ -171,8 +202,7 @@
   }
   
   .header-contacts__icon{
-
-
+    
     margin-right: 10px; 
 
     transition-property: fill;

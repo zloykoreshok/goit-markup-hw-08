@@ -25,8 +25,11 @@
 
       <header class="header">
           <div class="header-container container">
-            <a class="header-logo link" lang="en" href="/">Web<span class="header-logo__color">Studio</span></a>           
-              <nav class="nav">                   
+            <a class="header-logo link" lang="en" href="/">Web<span class="header-logo__color">Studio</span></a>
+
+            <!-- <div class="menu-container" id="menu-container" data-menu="">  -->
+
+              <!-- <nav class="nav">                   
                 <ul class="nav__list list">
                   <li class="nav__item">
                     <a href="./index.html" class="nav__link nav__link--active link">Студия</a></li>
@@ -44,8 +47,9 @@
                 <li class="header-contacts__list">
                   <a class="header-contacts__link" href="tel:+380961111111"><svg class="header-contacts__icon" width="10" height="14"><use href="./images/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a>
                 </li>
-              </ul>  
-           
+              </ul>   -->
+            <!-- </div> -->
+
               <!-- Header-button menu -->
               <div class="header-menu">
                 <button 
@@ -57,13 +61,33 @@
                   <svg class="header-menu__btn-icon" width="24" height="16" aria-label="переключатель мобильного меню">
                     <use class="icon-cross" href="./images/sprite.svg#menu"></use>
                     <use class="icon-burger" href="./images/sprite.svg#icon-modal-btn"></use>
-               </svg></button>
+                </svg></button>
+              </div>
+
+                <div class="header-menu__menu" id="header-menu__menu" data-menu>
+
+                 <nav class="nav">                   
+                  <ul class="nav__list list">
+                    <li class="nav__item">
+                      <a href="./index.html" class="nav__link nav__link--active link">Студия</a></li>
+                    <li class="nav__item">
+                      <a href="./portfolio.html" class="nav__link link">Портфолио</a></li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link link">Контакты</a></li>
+                  </ul>
+                 </nav>
+            
+                 <ul class="header-contacts list">              
+                  <li class="header-contacts__list">
+                     <a class="header-contacts__link" href="mailto:info@devstudio.com"><svg class="header-contacts__icon" width="14" height="10"><use href="./images/sprite.svg#envelope"></use></svg>info@devstudio.com</a>
+                  </li>                 
+                  <li class="header-contacts__list">
+                    <a class="header-contacts__link" href="tel:+380961111111"><svg class="header-contacts__icon" width="10" height="14"><use href="./images/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a>
+                  </li>
+                 </ul>  
+                </div>
               
 
-              <div class="header-menu__menu" id="header-menu__menu" data-menu>
-                Контент меню
-              </div>
-          </div>
     
 <!-- Header modal wrapper -->
 
