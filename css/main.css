@@ -283,24 +283,27 @@ body.modal-open {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    background-color: #B0D9C0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    background-color: #B9C2A8;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: palegoldenrod;
+    background-color: #6A8173;
   }
 }
 
@@ -418,10 +421,10 @@ h1, h2, h3, h4, h5, h6, p {
   .header-menu__menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
-    -ms-flex-preferred-size: 480px;
-        flex-basis: 480px;
+    z-index: 10;
+    width: 480px;
   }
   .header-menu__menu.is-open {
     display: block;
@@ -468,7 +471,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (min-width: 1200px) {
   .header-contacts {
-    margin-left: 349px;
+    margin-left: 345px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -643,6 +646,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (max-width: 767.98px) {
   .nav__list {
+    margin-top: 48px;
     margin-bottom: 302px;
   }
 }
@@ -721,9 +725,9 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  text-align: center;
   max-width: 1600px;
   min-height: 400px;
   background-color: #2F303A;
@@ -734,7 +738,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -743,6 +747,15 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: auto;
   margin-bottom: 30px;
   width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section__slogan {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    width: 696px;
+  }
 }
 
 .footer-socials__list {
@@ -1086,9 +1099,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .features__container {
-  margin-bottom: 30px;
   background: #F5F4FA;
   border-radius: 4px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,13 +1113,17 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
-  height: 120px;
 }
 
 @media screen and (min-width: 768px) {
   .features__container {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__container {
+    width: 270px;
   }
 }
 
@@ -1155,16 +1174,22 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
+}
+
 .features__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  width: 450px;
-  margin-bottom: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 450px;
+  margin-bottom: 10px;
   color: #2F303A;
 }
 
@@ -1172,6 +1197,12 @@ h1, h2, h3, h4, h5, h6, p {
   .features__subtitle {
     width: 354px;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__subtitle {
+    width: 270px;
   }
 }
 
@@ -1193,20 +1224,19 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__paragraph {
+    width: 270px;
+  }
+}
+
 .services {
   display: none;
 }
 
-.services__container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .services__container {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
   }
 }
 
@@ -1214,7 +1244,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0%;
+  padding-left: 0;
 }
 
 .services__item {
@@ -1262,7 +1292,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .team__list {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1270,6 +1299,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   padding-left: 0;
 }
 
@@ -1290,8 +1320,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .team__block {
-  margin-top: 30px;
   background-color: #FFFFFF;
+  margin-top: 30px;
   width: 452px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1312,6 +1342,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__block {
+    width: 270px;
+  }
+}
+
 .team-photo {
   max-width: 450px;
 }
@@ -1322,6 +1358,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-photo {
+    width: 270px;
+  }
+}
+
 .team__card {
   padding: 30px 32px;
 }
@@ -1329,6 +1371,12 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 768px) {
   .team__card {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    width: 270px;
   }
 }
 
@@ -1354,6 +1402,12 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #2F303A;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 60px;
+  }
+}
+
 .footer__info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1365,6 +1419,15 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__info-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .footer__tablet-invite {
@@ -1387,6 +1450,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__tablet-invite {
+    margin: 0;
+  }
+}
+
 .footer__adress-group {
   text-align: center;
   margin: 0 auto 60px auto;
@@ -1395,6 +1464,14 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 768px) {
   .footer__adress-group {
     margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__adress-group {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1456,6 +1533,12 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__invite-container {
+    margin: 0;
+  }
+}
+
 .footer__heading {
   font-style: normal;
   font-weight: 700;
@@ -1476,6 +1559,13 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto 60px auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__msg-container {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
 .footer__msg-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1488,6 +1578,18 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__msg-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__input {
@@ -1507,6 +1609,14 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
 .header-menu__btn {
   width: 40px;
   height: 40px;
@@ -1514,6 +1624,8 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   line-height: 0;
   padding: 0;
+  position: relative;
+  z-index: 20;
 }
 
 .header-menu__btn .icon-cross {
@@ -1661,6 +1773,12 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__btn {
+    margin-left: auto;
+  }
+}
+
 .icon-send {
   fill: #FFFFFF;
   margin-left: 10px;
@@ -1672,10 +1790,10 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -15px 60px -15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -15px 60px -15px;
 }
 
 .customers__link {
@@ -1714,6 +1832,12 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 768px) {
   .customers__link {
     width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
   }
 }
 /*# sourceMappingURL=main.css.map */

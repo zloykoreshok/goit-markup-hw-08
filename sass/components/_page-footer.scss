@@ -1,35 +1,58 @@
 .footer{
-    padding-top:60px;
-    // padding-bottom: 60px;
-   
-    background-color: $tuna;
-  }
+  padding-top:60px;
+  background-color: $tuna;
+
+  @media screen and (min-width:$desktop){
+    padding-bottom: 60px;
+  }  
+}
   
   .footer__info-container{
     display: flex;
     align-items: baseline;
     flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
   }
   
-  .footer__tablet-invite{
-    margin-left: auto;
-    margin-right: auto;
+.footer__tablet-invite{
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: $tablet) {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+    
+
+    // display: flex;
+    // flex-direction: row;
+    // align-items: baseline;
+    }
+
   }
 
 
-  .footer__adress-group{
+.footer__adress-group{
    text-align: center;
    margin: 0 auto 60px auto;
-   @media screen and (min-width: $tablet) {
 
+   @media screen and (min-width: $tablet) {
     margin-right: 165px;
+   }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
+
   }
   
   .footer__logo{
@@ -91,6 +114,12 @@
     margin: 0 auto 60px auto;
 
     align-items: center;
+
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      
+          }
+
   }
   
   .footer__heading{
@@ -112,6 +141,13 @@
     margin: 0 auto 60px auto; 
 
     // align-items: baseline;
+
+    @media screen and (min-width: $desktop) {
+margin-right: 0;
+margin-bottom: 0;
+
+    }
+
   }
   
   .footer__msg-form{
@@ -121,6 +157,12 @@
     color: $footer-links-color;
 
     align-items: center;
+
+  @media screen and (min-width: $desktop) {
+  flex-direction: row;
+  align-items: baseline;
+}
+
   }
   
   .footer__input{
@@ -128,7 +170,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     background-color: transparent;  
-    color: #FFFFFF;
+    color: $white;
     box-sizing: border-box;
     outline: 1px solid rgba(255, 255, 255, 0.3);
     display: block;
@@ -138,4 +180,12 @@
     width: 450px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+
+
   }

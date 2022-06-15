@@ -7,7 +7,9 @@
   border: none;
   line-height: 0;
   padding: 0;
-
+  
+  position: relative;
+  z-index: 20;
 // display: inline-flex;
 // margin: 0;
 // padding: 0;
@@ -235,6 +237,11 @@
     transition-timing-function: $timing;
     color: $white;
     background-color: $dodger-blue;
+
+@media screen and (min-width: $desktop) {
+  margin-left: auto;
+}
+
   }
   
   .icon-send{

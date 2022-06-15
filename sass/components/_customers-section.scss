@@ -1,51 +1,43 @@
-.customers__item{
-    // margin-right: 30px;
-  }
+.customers__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px 60px -15px;   
+}
+ 
+.customers__link{
+  width: 210px;
+  height: 92px;
+  margin: 15px;
   
-//   .customers__item:last-child{
-//     margin-right: 0;
-//   }
-  
-  .customers__list{
-    display: flex;
-    flex-wrap: wrap;
-    // flex-direction: column;
-     margin: 0 -15px 60px -15px;
-     justify-content: center;
-  }
-  
-  .customers__link{
-     width: 210px;
-     height: 92px;
-
-     margin: 15px;
-  
-     display: flex;
-     justify-content:center;
-     align-items: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
     
-     outline: transparent;
-     border: 1px solid $bombay;
-     border-radius: 4px;
+  outline: transparent;
+  border: 1px solid $bombay;
+  border-radius: 4px;
   
-     background-size:  contain;
-     background-repeat: no-repeat;
-     background-position: center; 
-     fill: $bombay;
+  background-size:  contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  fill: $bombay;
   
-     transition-property: fill, border-color;
-     transition-duration: $duration;
-     transition-timing-function: $timing; 
+  transition-property: fill, border-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing; 
 
-     &:hover,
-     &:focus{
-       fill: $dodger-blue;
-       border-color: $dodger-blue;
-     }
+  &:hover,
+  &:focus{
+    fill: $dodger-blue;
+    border-color: $dodger-blue;
+  }
 
-     @media screen and (min-width: $tablet){
-      width: 226px;
-     }
+  @media screen and (min-width: $tablet){
+    width: 226px;
+  }
       
-     }
-  
+  @media screen and (min-width: $desktop){
+    width: 170px;
+  }
+}

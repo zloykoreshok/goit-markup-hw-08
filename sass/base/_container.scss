@@ -7,22 +7,24 @@
 
     padding-left: 15px;
     padding-right: 15px;
-    
+    margin: auto;
     // margin-left: auto;
     // margin-right: auto; 
    
   @media screen and (min-width: $mobile){
     width: $mobile;
+    background-color: #B0D9C0;
   }
 
   @media screen and (min-width: $tablet){
     width: $tablet;
-    
+    background-color: #B9C2A8;
   }
 
   @media screen and (min-width: $desktop){
     width: $desktop;
-    background-color: palegoldenrod;
+    
+    background-color: #6A8173;
   }
   }
 
