@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (min-width: 1200px) {
   .header-contacts {
-    margin-left: 305px;
+    margin-left: 349px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -524,7 +524,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header-contacts__link--mobile {
-  font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.2;
@@ -539,9 +538,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1;
-    color: #757575;
     padding-top: 10px;
     padding-bottom: 0;
+    color: #757575;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 250ms;

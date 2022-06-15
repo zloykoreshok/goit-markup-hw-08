@@ -57,8 +57,7 @@
      
   @media screen and (min-width: 767.98px) {
     display: none;
-  }
-    
+  }  
 }
 
 .header-menu__menu{
@@ -106,7 +105,7 @@
   }
       
   @media screen and (min-width:$desktop){
-    margin-left: 305px;
+    margin-left: 349px;
     display: flex; 
     align-items: baseline;     
   }
@@ -117,27 +116,21 @@
   align-items: center;
 }
 
-  .header-contacts__link--mail{
+.header-contacts__link--mail{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $boulder;
 
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: $boulder;
-
-    @media screen and (min-width: $tablet) { 
-   
+  @media screen and (min-width: $tablet) {   
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1;
-    
     letter-spacing: 0.02em;
-       
-    // align-items: center;
-    
+          
     padding-top: 10px;
-    // display: block;
   
     transition-property: color;
     transition-duration: $duration;
@@ -156,50 +149,44 @@
   }
 
 }
-    .header-contacts__link--mobile{
-    
-      font-style: normal;
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.2;     
-      letter-spacing: 0.02em;
-      text-decoration: none;
 
-      padding-bottom: 32px;
-      color: $dodger-blue;
+.header-contacts__link--mobile{
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;     
+  letter-spacing: 0.02em;
+  text-decoration: none;
 
+  padding-bottom: 32px;
+  color: $dodger-blue;
 
-      @media screen and (min-width: $tablet) { 
-
+  @media screen and (min-width: $tablet){ 
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1;  
  
-    color: $boulder;
     padding-top: 10px;
     padding-bottom: 0;
-    // display: block;
+    color: $boulder;
 
-  
     transition-property: color;
     transition-duration: $duration;
     transition-timing-function: $timing;
 
-    &:hover,
-    &:focus{
-      color: $dodger-blue;
-    }
+      &:hover,
+      &:focus{
+        color: $dodger-blue;
+      }
     }
 
-    @media screen and (min-width: $desktop) { 
-      padding-top: 32px;
-      padding-bottom: 32px;
- 
-    }
+  @media screen and (min-width: $desktop) { 
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
+}
   
-  .header-contacts__icon{
-    display: none;
+.header-contacts__icon{
+  display: none;
 
   @media screen and (min-width:$tablet) {
     display: inline-block;
@@ -211,52 +198,41 @@
   
     fill: currentColor;
 
-    &:hover,
-    &:focus{
-  fill: $dodger-blue;
-  }  
-        }
+      &:hover,
+      &:focus{
+    fill: $dodger-blue;
+    }  
   }
+}
   
-  .header-socials{
-    display: flex;
-
-
+.header-socials{
+  display: flex;
 
     @media screen and (min-width:$tablet){
       display: none;
     }
   }
 
-  .header-socials__list{
-    padding-left: 10px;
-    padding-right: 10px;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    
+.header-socials__list{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2); 
 
     &:first-child{
       padding-left: 0;
     }
+
     &:last-child{
       padding-right: 0;
       border-right: 0;
     }
+}
+
+.header-socials__link{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2px;
+  letter-spacing: 0.02em;
+
+  color: $dodger-blue; 
   }
-
-  .header-socials__link{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2px;
-    letter-spacing: 0.02em;
-
-    color: $dodger-blue;
-
-    
-  }
-
-
-  
-  
-  
-  
-  

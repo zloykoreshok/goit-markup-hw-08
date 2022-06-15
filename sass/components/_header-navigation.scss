@@ -33,62 +33,51 @@
       margin-right: 0;
     }
   }
-
 }
     
-  .nav__link{
-    // display: none;
-   // display: block;
+.nav__link{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
 
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-
-    text-decoration: none;
+  text-decoration: none;
   
-    transition-property: color;
-    transition-duration: $duration;
-    transition-timing-function: $timing;
+  transition-property: color;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
   
-    color: $tuna;
+  color: $tuna;
 
     &:hover,
     &:focus{
       color: $dodger-blue;
     }
 
-    @media screen and (min-width: $tablet){ 
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-    }
-
-    @media screen and (min-width:$desktop) {
-     
-    }
+  @media screen and (min-width: $tablet){ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
   }
+}
   
-  .nav__link--active{
-    position: relative;
-    
-    color: $dodger-blue; 
+.nav__link--active{
+  position: relative;
+  color: $dodger-blue; 
 
-    @media screen and (min-width: $tablet){ 
-      &::after{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: $dodger-blue;
+  @media screen and (min-width: $tablet){ 
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $dodger-blue;
       
-        position: absolute;
-        bottom: -34px;
-        left: 0;
-      }   
-  
-    }
-  
+      position: absolute;
+      bottom: -34px;
+      left: 0;
+    }   
   }
+}
   
