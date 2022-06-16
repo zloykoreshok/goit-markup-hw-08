@@ -1598,10 +1598,12 @@ img {
 }
 
 .footer__heading {
-  font-style: normal;
   font-weight: 700;
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: #FFFFFF;
 }
@@ -1662,7 +1664,7 @@ img {
   display: block;
   padding: 15px 16px;
   margin-bottom: 20px;
-  width: 450px;
+  max-width: 450px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
