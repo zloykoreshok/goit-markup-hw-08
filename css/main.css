@@ -289,21 +289,21 @@ body.modal-open {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: #B0D9C0;
+    outline: 1px solid red;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: #B9C2A8;
+    outline: 1px solid green;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: #6A8173;
+    outline: 1px solid blue;
   }
 }
 
@@ -314,6 +314,17 @@ body.modal-open {
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-bottom: 30px;
+  text-align: center;
+  color: #2F303A;
+}
+
+.customers__section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 15px;
   text-align: center;
   color: #2F303A;
 }
@@ -1618,6 +1629,50 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+
+.portfolio__btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__btn-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.portfolio__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-btn-container:last-child {
+  margin-right: 0;
+}
+
 .header-menu__btn {
   width: 40px;
   height: 40px;
@@ -1694,6 +1749,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 155;
   border: none;
   cursor: pointer;
   outline: transparent;
@@ -1706,7 +1762,6 @@ h1, h2, h3, h4, h5, h6, p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 155;
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -1751,6 +1806,76 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio__btn {
+  font-family: 'Roboto', 'Sans-Serif';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-right: 8px;
+  padding: 6px 22px 6px 22px;
+  -webkit-transition-property: color, background-color, 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color, background-color, 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2F303A;
+  background-color: #F5F4FA;
+}
+
+.portfolio__btn:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio__btn:hover, .portfolio__btn:focus {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__btn {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio__sum-btn {
+  font-family: 'Roboto', 'Sans-Serif';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  padding: 6px 22px 6px 22px;
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
+
+.portfolio__sum-btn:hover, .portfolio__sum-btn:focus {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__sum-btn {
+    margin-bottom: 0;
+  }
 }
 
 .footer__btn {
@@ -1800,7 +1925,13 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 -15px 60px -15px;
+  margin: 0 -15px 45px -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__list {
+    margin-bottom: 79px;
+  }
 }
 
 .customers__link {
