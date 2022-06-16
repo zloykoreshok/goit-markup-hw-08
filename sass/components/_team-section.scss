@@ -21,7 +21,7 @@
 .team__block{  
   background-color: $white;
   margin-top: 30px;
-  width: 452px;
+  max-width: 452px;
   box-shadow: $projects-shadow;
 
   &:first-child{
@@ -29,7 +29,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    max-width: 354px;
     margin-right: 15px; 
     margin-left: 15px;
 
@@ -39,7 +39,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 270px;
+    max-width: 270px;
   }
 }
   
@@ -47,11 +47,11 @@
   max-width: 450px;
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    max-width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 270px;
+    max-width: 270px;
   }
 }
   
@@ -59,11 +59,11 @@
   padding: 30px 32px;
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    max-width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 270px;
+    max-width: 270px;
   }
 }
   
@@ -86,5 +86,3 @@
 
   text-align: center;
 }
-  
-  
