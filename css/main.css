@@ -1684,7 +1684,8 @@ img {
   display: block;
   padding: 15px 16px;
   margin-bottom: 20px;
-  max-width: 450px;
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
