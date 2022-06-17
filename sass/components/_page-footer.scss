@@ -1,5 +1,6 @@
 .footer{
   padding-top:60px;
+  padding-bottom: 60px;
   background-color: $tuna;
 
   @media screen and (min-width:$desktop){
@@ -30,7 +31,6 @@
   @media screen and (min-width: $desktop) {
     margin: 0;
     
-
     // display: flex;
     // flex-direction: row;
     // align-items: baseline;
@@ -43,158 +43,141 @@
    text-align: center;
    margin: 0 auto 60px auto;
 
-   @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     margin-right: 165px;
-   }
+  }
 
   @media screen and (min-width: $desktop) {
     text-align: left;
     margin-right: 70px;
     margin-bottom: 0;
   }
-
   }
   
-  .footer__logo{
-    font-family: 'Raleway', 'Sans-Serif';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+.footer__logo{
+  font-family: 'Raleway', 'Sans-Serif';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
   
-    margin-bottom: 20px;
-    display: block;
+  margin-bottom: 20px;
+  display: block;
     
+  color: $dodger-blue;
+}
+  
+.footer__logo-color{
+  color: $white;
+}
+  
+.footer__list{
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+    
+  font-style: normal; 
+  list-style: none;
+  padding-left: 0;  
+}
+  
+.footer__adress{
+  font-style: normal;
+  line-height: 24px;
+  
+  color: $white;
+}
+  
+.footer__adress-item{
+  margin-top: 8px;
+}
+  
+.footer__link{
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  
+  transition-property: inherit;
+  transition-duration: $duration;
+  transition-timing-function: $timing;  
+  color: $footer-links-color; 
+
+  &:hover, 
+  &:focus{
     color: $dodger-blue;
   }
-  
-  .footer__logo-color{
-    color: $white;
-  }
-  
-  .footer__list{
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    margin: 0;
-    
-    font-style: normal; 
-    list-style: none;
-    padding-left: 0;  
-  }
-  
-  .footer__adress{
-    font-style: normal;
-    line-height: 24px;
-  
-    color: $white;
-  }
-  
-  .footer__adress-item{
-    margin-top: 8px;
-  }
-  
-  .footer__link{
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-  
-    transition-property: inherit;
-    transition-duration: $duration;
-    transition-timing-function: $timing;  
-    color: $footer-links-color; 
+} 
 
-    &:hover, 
-    &:focus{
-      color: $dodger-blue;
-    }
-  }
-  
+.footer__invite-container{
+  margin: 0 auto 60px auto;
 
-  .footer__invite-container{
-    margin: 0 auto 60px auto;
-
-    align-items: center;
-
-    @media screen and (min-width: $desktop) {
-      margin: 0;
-      
-          }
-
-  }
-  
-  .footer__heading{
-
-    font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-
-    margin-bottom: 20px;
-    color: $white;
-
-@media screen and (min-width:$tablet) {
-  
-}
-
-  }
-  
- 
-
-  .footer__msg-container{
-    display: flex;
-    flex-direction: column;
-    
-    margin: 0 auto 60px auto; 
-
-    // align-items: baseline;
-
-    @media screen and (min-width: $desktop) {
-margin-right: 0;
-margin-bottom: 0;
-
-    }
-
-  }
-  
-  .footer__msg-form{
-    display: flex;
-    
-    flex-direction: column;
-    color: $footer-links-color;
-
-    align-items: center;
+  align-items: center;
 
   @media screen and (min-width: $desktop) {
-  flex-direction: row;
-  align-items: baseline;
+    margin: 0;  
+  }
 }
-
-  }
   
-  .footer__input{
-    font-family: 'Roboto', 'Sans-Serif';
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    background-color: transparent;  
-    color: $white;
-    box-sizing: border-box;
-    outline: 1px solid rgba(255, 255, 255, 0.3);
-    display: block;
-    padding: 15px 16px;
-    margin-bottom: 20px;
-      
-    max-width: 450px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px; 
+.footer__heading{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    @media screen and (min-width: $desktop) {
-      width: 358px;
-      margin-bottom: 0;
-      margin-right: 12px;
-    }
+  margin-bottom: 20px;
+  color: $white;
+}
+  
+.footer__msg-container{
+  display: flex;
+  flex-direction: column;
+    
+  margin-left: auto;
+  margin-right: auto;
 
+  align-items: baseline;
 
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-bottom: 0;
   }
+}
+  
+.footer__msg-form{
+  display: flex;
+    
+  flex-direction: column;
+  color: $footer-links-color;
+
+  align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+  
+.footer__input{
+  font-family: 'Roboto', 'Sans-Serif';
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  background-color: transparent;  
+  color: $white;
+  box-sizing: border-box;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+      
+  max-width: 450px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px; 
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
