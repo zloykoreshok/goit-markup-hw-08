@@ -1672,6 +1672,12 @@ img {
   }
 }
 
+.footer__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__input {
   font-family: 'Roboto', 'Sans-Serif';
   font-size: 14px;
@@ -1684,15 +1690,19 @@ img {
   display: block;
   padding: 15px 16px;
   margin-bottom: 20px;
-  -ms-flex-preferred-size: 450px;
-      flex-basis: 450px;
+  max-width: 450px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__input {
     width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
     margin-bottom: 0;
     margin-right: 12px;
   }

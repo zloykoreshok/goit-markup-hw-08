@@ -170,7 +170,11 @@
     align-items: baseline;
   }
 }
-  
+
+.footer__label{
+  display: flex;
+}
+
 .footer__input{
   font-family: 'Roboto', 'Sans-Serif';
   font-size: 14px;
@@ -183,12 +187,16 @@
   padding: 15px 16px;
   margin-bottom: 20px;
       
-  flex-basis: 450px;
+  max-width: 450px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px; 
 
+@media screen and (min-width: $tablet) {
+  width: 358px;
+}
+
   @media screen and (min-width: $desktop) {
-    width: 358px;
+    
     margin-bottom: 0;
     margin-right: 12px;
   }
