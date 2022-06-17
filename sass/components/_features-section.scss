@@ -15,7 +15,6 @@
 
   @media screen and (min-width: $tablet) {
     max-width: 354px;
-    
   }
 
   @media screen and (min-width: $desktop) {
@@ -41,7 +40,6 @@
 .features__item{  
   max-width: 450px; 
   margin-bottom: 30px;
-  // margin-right: 30px;
    
   &:last-child{
     margin-bottom: 0;
@@ -57,10 +55,10 @@
     }
   }
     
-    @media screen and (min-width: $desktop) {
-      max-width: 270px;
-    }
+  @media screen and (min-width: $desktop) {
+    max-width: 270px;
   }
+}
     
 .features__subtitle {
   font-weight: 700;

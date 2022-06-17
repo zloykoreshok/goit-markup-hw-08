@@ -310,9 +310,9 @@ body.modal-open {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 30px;
-  text-align: center;
   color: #2F303A;
 }
 
@@ -321,9 +321,9 @@ body.modal-open {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 15px;
-  text-align: center;
   color: #2F303A;
 }
 

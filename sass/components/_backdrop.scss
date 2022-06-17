@@ -1,25 +1,24 @@
 // Hero Order button backdrop 
 
 .backdrop{
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-background;
+  z-index: 200;
+  overflow-y: scroll;
 
-    position: fixed;  
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $backdrop-background;
-    z-index: 200;
-    overflow-y: scroll;
+  transition-property: inherit;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+}
 
-    transition-property: inherit;
-    transition-duration: $duration;
-    transition-timing-function: $timing;
-  }
-
-  .backdrop.is-hidden{
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;  
-  }
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;  
+}
 
   
