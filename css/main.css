@@ -2135,6 +2135,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
+  margin: auto;
   border: 0;
   border-radius: 4px;
   letter-spacing: 0.06em;
@@ -2147,6 +2148,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition-property: inherit;
   transition-property: inherit;
   -webkit-transition-duration: 250ms;
