@@ -511,6 +511,15 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #757575;
 }
 
@@ -547,6 +556,15 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 32px;
   color: #2196F3;
 }
