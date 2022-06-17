@@ -118,6 +118,24 @@
   }
 }
   
+.footer__msg-container{
+ 
+  display: flex;
+  flex-direction: column;
+
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-bottom: 0;
+    
+    
+  }
+}
+  
 .footer__heading{
   font-weight: 700;
   font-size: 14px;
@@ -135,34 +153,17 @@
   margin-right: 0;
   }
 }
-  
-.footer__msg-container{
- 
-  display: flex;
-  flex-direction: column;
- 
-  margin-left: auto;
-  margin-right: auto;
 
-  align-items: baseline;
-
-  @media screen and (min-width: $desktop) {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-}
-  
 .footer__msg-form{
   display: flex;
-    
+  
   flex-direction: column;
   color: $footer-links-color;
 
   align-items: center;
-
   margin-left: auto;
   margin-right: auto;
-  
+  // width: 100%;
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
