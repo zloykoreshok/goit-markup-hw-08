@@ -7,20 +7,32 @@
    
   @media screen and (min-width: $mobile){
     width: $mobile;
-    // outline: 1px solid red;
+    outline: 1px solid red;
   }
 
   @media screen and (min-width: $tablet){
     width: $tablet;
-    // outline: 1px solid green;
+    outline: 1px solid green;
   }
 
   @media screen and (min-width: $desktop){
     width: $desktop;
     
-    // outline: 1px solid blue;
+    outline: 1px solid blue;
   }
   }
+
+.section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+}
+
 
 .section-title{
   font-weight: 700;
@@ -28,22 +40,13 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  
+  margin-bottom: 30px;
 
-  padding-top: 60px;
-  padding-bottom: 30px;
-    
   color: $tuna;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
-.customers__section-title{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-align: center;
-
-  padding-top: 60px;
-  padding-bottom: 15px;
-    
-  color: $tuna;
-}

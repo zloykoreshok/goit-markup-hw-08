@@ -1,4 +1,5 @@
 .services{
+  padding-top: 0;
   display: none;
 
   @media screen and (min-width: $desktop){
@@ -7,8 +8,11 @@
 }
 
 .services__list {
+  
+ 
   display: flex;
-  padding-left: 0; 
+  padding-left: 0;
+
 }
 
 .services__item{
