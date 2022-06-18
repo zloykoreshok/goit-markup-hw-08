@@ -39,14 +39,14 @@
   color: $dodger-blue;
 
   @media screen and (min-width: $tablet){
-    padding: 16px 0;
-    margin: 0 15px;
+    padding: 26px 0;
+    // margin: 0 15px;
   }
 
   @media screen and (min-width: $desktop){
       font-size: 26px;
       padding: 26px 0;
-      margin: 0 15px;
+      // margin: 0 15px;
   }
 }
   
@@ -93,7 +93,6 @@
   @media screen and (min-width:$desktop){
   justify-content: space-between;   
   }
-
 } 
 
 .header-contacts{
@@ -101,6 +100,7 @@
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;   
+
 
   @media screen and (max-width:767px) {
     display: flex;
@@ -115,7 +115,7 @@
   @media screen and (min-width:$desktop){
     margin-left: 345px;
     display: flex; 
-    align-items: baseline;     
+       
   }
 }
 
@@ -123,10 +123,18 @@
   display: flex;
   align-items: center;
 
+  @media screen and (min-width:$tablet){
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+  }     
+    }
+
   @media screen and (min-width:$desktop){
   margin-right: 30px;
+  margin-bottom: 0;
   &:last-child {
-    margin-right: 0;
+    margin-right: 0;    
 }     
   }
 }
@@ -150,7 +158,8 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
           
-    padding-top: 10px;
+    padding-top: 21px;
+    
   
     transition-property: color;
     transition-duration: $duration;
@@ -165,7 +174,7 @@
   @media screen and (min-width: $desktop) { 
     padding-top: 32px;
     padding-bottom: 32px;
-   
+    margin-bottom:0;
   }
 }
 
@@ -188,8 +197,7 @@
     font-size: 12px;
     line-height: 1.1;  
  
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding-bottom: 21px;
     color: $boulder;
 
     transition-property: color;
