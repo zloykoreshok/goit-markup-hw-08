@@ -1,12 +1,11 @@
 .hero-section{
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+
+  
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
 
-  max-width: 1600px;
+  // width: 1600px;
   min-height: 400px;
 
   background-color: $tuna;
@@ -50,6 +49,9 @@
     rgba(47,48,58,0.4), 
     rgba(47,48,58,0.4)),
     url(..//images/hero/hero-img_lg.jpg);
+
+    min-height: 600px;
+
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

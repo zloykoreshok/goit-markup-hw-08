@@ -432,7 +432,7 @@ img {
   font-size: 20px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
   .header-menu__menu {
     display: none;
     position: absolute;
@@ -465,7 +465,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
   .header-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -677,7 +677,7 @@ img {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
   .nav__list {
     margin-top: 48px;
     margin-bottom: 302px;
@@ -754,13 +754,9 @@ img {
 }
 
 .hero-section {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  max-width: 1600px;
   min-height: 400px;
   background-color: #2F303A;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero/hero-img_sm.jpg);
@@ -795,6 +791,7 @@ img {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero/hero-img_lg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero/hero-img_lg.jpg);
+    min-height: 600px;
   }
 }
 
@@ -1175,7 +1172,8 @@ img {
 }
 
 .features {
-  margin-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features__container {
@@ -1228,9 +1226,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: -30px;
+    margin: -15px;
   }
 }
 
@@ -1246,8 +1242,7 @@ img {
 @media screen and (min-width: 768px) {
   .features__item {
     max-width: 354px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 15px;
   }
   .features__item:last-child {
     margin-bottom: 30px;
@@ -1257,6 +1252,7 @@ img {
 @media screen and (min-width: 1200px) {
   .features__item {
     max-width: 270px;
+    margin: 15px;
   }
 }
 
@@ -2093,8 +2089,8 @@ img {
   display: inline-block;
   letter-spacing: 0.06em;
   cursor: pointer;
-  max-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   border: none;
   border-radius: 4px;
   -webkit-transition-property: inherit;
