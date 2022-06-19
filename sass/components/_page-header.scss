@@ -1,5 +1,5 @@
 .header{
-  position: relative;
+  
   border-bottom: $gallery solid 1px;
     
   @media screen and (min-width:$tablet){
@@ -16,9 +16,14 @@
   margin-top: 0;
   padding-left: 0;
 
+  @media screen and (max-width:767px) {
+    // position: relative;
+  }
+
   @media screen and (min-width:$tablet) {
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+
   }
 
   @media screen and (min-width:$desktop) {
@@ -58,25 +63,29 @@
 
 
 .header-contacts{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;   
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.15;
+    // letter-spacing: 0.02em;   
 
 
   @media screen and (max-width:767px) {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
 
   @media screen and (min-width:$tablet){
-    margin-left: 84px;
+  
   }
       
   @media screen and (min-width:$desktop){
-    margin-left: 345px;
+    // margin-left: 345px;
+    justify-content: space-between;
     display: flex; 
+    flex-direction: row;
+    
+    width: 333px;
        
   }
 }
@@ -84,6 +93,10 @@
 .header-contacts__list{
   display: flex;
   align-items: center;
+
+  @media screen and (max-width:767px) {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width:$tablet){
     margin-bottom: 10px;
@@ -93,11 +106,7 @@
     }
 
   @media screen and (min-width:$desktop){
-  margin-right: 30px;
-  margin-bottom: 0;
-  &:last-child {
-    margin-right: 0;    
-}     
+    margin-bottom: 0;   
   }
 }
 
@@ -154,6 +163,7 @@
   padding-bottom: 32px;
   color: $dodger-blue;
 
+
   @media screen and (min-width: $tablet){ 
     font-weight: 500;
     font-size: 12px;
@@ -173,6 +183,7 @@
     }
 
   @media screen and (min-width: $desktop) { 
+
     padding-top: 32px;
     padding-bottom: 32px;
   }
