@@ -28,22 +28,22 @@
           <a class="header-logo link" lang="en" href="/">Web<span class="header-logo__color">Studio</span></a>
 
                               <!-- Header-button menu -->
+        <button 
+          class="menu-button is-open"
+          type="button" 
+          aria-expanded="false" 
+          aria-controls="menu-container"
+          data-menu-button>
+            <svg class="header-menu__btn-icon" width="24" height="16" aria-label="переключатель мобильного меню">
+              <use class="icon-menu" href="./images/sprite.svg#icon-modal-btn"></use>
+              <use class="icon-cross" href="./images/sprite.svg#menu"></use>
+            </svg>
+          </button>
 
-          <div class="header-menu">
-            <button 
-              class="header-menu__btn is-open"
-              type="button" 
-              aria-expanded="false" 
-              aria-controls="header-menu__menu"
-              data-menu-button>
-              <svg class="header-menu__btn-icon" width="24" height="16" aria-label="переключатель мобильного меню">
-                <use class="icon-cross" href="./images/sprite.svg#menu"></use>
-                <use class="icon-burger" href="./images/sprite.svg#icon-modal-btn"></use>
-              </svg>
-            </button>
-          </div>
+          <!-- <div class="header__mobile-menu">  
+          </div> -->
 
-          <div class="header-menu__menu" id="header-menu__menu" data-menu>
+          <div class="menu-container" id="menu-container" data-menu>
             <nav class="nav">
               <ul class="nav__list list">
                 <li class="nav__item">
@@ -65,21 +65,21 @@
               </li>
             </ul>
                  
-            <ul class="header-socials list">
-              <li class="header-socials__list">
-                <a class="header-socials__link link" href="" rel="noopener noreferrer" aria-label="иконка Instagram">Instagram</a>
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="" rel="noopener noreferrer" aria-label="иконка Instagram">Instagram</a>
               </li>
 
-              <li class="header-socials__list">
-                <a class="header-socials__link link" href="" rel="noopener noreferrer" aria-label="иконка Twitter">Twitter</a>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="" rel="noopener noreferrer" aria-label="иконка Twitter">Twitter</a>
               </li>
 
-              <li class="header-socials__list">
-                <a class="header-socials__link link" href="" rel="noopener noreferrer" aria-label="иконка Facebook">Facebook</a>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="" rel="noopener noreferrer" aria-label="иконка Facebook">Facebook</a>
               </li>
 
-              <li class="header-socials__list">
-                <a class="header-socials__link link" href="" rel="noopener noreferrer" aria-label="иконка linkedin">linkedin</a>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="" rel="noopener noreferrer" aria-label="иконка linkedin">linkedin</a>
               </li>
             </ul>
           </div>

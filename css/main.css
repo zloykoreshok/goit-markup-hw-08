@@ -377,6 +377,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 0;
   padding-left: 0;
 }
@@ -421,16 +424,6 @@ img {
 
 .header-logo__color {
   color: #2F303A;
-}
-
-.header-menu {
-  margin-left: auto;
-}
-
-@media screen and (min-width: 767.98px) {
-  .header-menu {
-    display: none;
-  }
 }
 
 .header-contacts {
@@ -764,7 +757,8 @@ img {
   }
 }
 
-.header-menu__menu {
+.menu-container {
+  margin-left: auto;
   background-color: #FFFFFF;
   padding-left: 40px;
   padding-bottom: 48px;
@@ -773,21 +767,21 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .header-menu__menu {
+  .menu-container {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
-    width: 480px;
+    width: 100%;
   }
-  .header-menu__menu.is-open {
+  .menu-container.is-open {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header-menu__menu {
+  .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -799,38 +793,75 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .header-menu__menu {
+  .menu-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
 
-.header-menu__btn {
+.menu-button {
+  padding: 12px 8px;
+  border: 0;
+  line-height: 0;
+  background-color: transparent;
   width: 40px;
   height: 40px;
-  background-color: #FFFFFF;
-  border: none;
-  line-height: 0;
-  padding: 0;
   position: relative;
   z-index: 20;
 }
 
-.header-menu__btn:hover, .header-menu__btn:focus {
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button:hover, .menu-button:focus {
   fill: #2196F3;
 }
 
-.header-menu__btn .icon-cross {
+.menu-button .icon-cross {
   display: none;
 }
 
-.header-menu__btn.is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.header-menu__btn.is-open .icon-burger {
+.menu-button.is-open .icon-menu {
   display: none;
+}
+
+.mobile-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 64px;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-list {
+    display: none;
+  }
+}
+
+.mobile-menu-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.mobile-menu-item:not(:last-child) .mobile-menu-link {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero-section {
