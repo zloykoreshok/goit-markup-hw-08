@@ -1,27 +1,31 @@
 .modal-wrapper{ 
   padding: 40px;
-
   position: absolute;
   top: 50%;
-  left: 50%; 
-  
-  transform: translate(-50%, -50%);
-    
-  background-color: $white;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+
+  border-radius: 4px;
+   background-color: $white;
+
+  width:100%;
+ 
 
   z-index: 100;
 
   @media screen and (max-width:478px)  {
-    width: 96%;
-  }  
-
-  @media screen and (min-width: $tablet) {
-    min-width: 450px;
+    max-width: 450px;
   }
+
+  @media screen and (min-width:$mobile)  {
+    max-width: 450px;
+  }
+  
 
   @media screen and (min-width: $desktop) {
-  min-width: 528px;
+    max-width: 528px;
   }
+
 
 }
   

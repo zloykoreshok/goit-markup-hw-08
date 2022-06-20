@@ -1,5 +1,9 @@
 .menu-container{
+  
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   margin-left: auto;
   //  position: fixed;
   background-color: $white;
@@ -8,17 +12,14 @@
   font-size: 20px;
   margin-left: 0;
  
+ 
 
   &.is-open{
     display: block;
-    position: fixed;
+
   }
 
   @media screen and (max-width:767px) {
-    position: absolute;
-
-    top: 0;
-    left: 0;
       
     width: 100vw;
     max-height: 100vh;
@@ -27,6 +28,7 @@
   }
   
   @media screen and (min-width:$tablet){
+    position: static;
     padding: 0;
     display: flex;
     // justify-content: space-between;
@@ -38,10 +40,12 @@
   }
 } 
 
+
+
   // Header Menu Button
 
 .menu-button{
-  
+
   display: inline-flex;
   padding: 12px 8px;
   border: 0;
@@ -75,16 +79,39 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
-  ;
-}  
+}
+
+.menu-button.is-open{
+  @media screen and (max-width: 767px) {
+    position: fixed;
+  }
+  
+  left: 88%;
+
+  @media screen and (min-width: 320px) {
+    position: fixed;
+    left: 83%;
+  }
+
+  @media screen and (min-width: 375px) {
+    left: 85%;
+  }
+
+  @media screen and (min-width: 425px) {
+    left: 87%;
+  }
+
+  @media screen and (min-width: 425px) {
+    left: 89%;
+  }
+
+  @media screen and (min-width:$tablet) {
+    // position: static;
+  }
+
+}
 
 
-
-
-// .menu-button.is-open{
-//   position: fixed;
-
-// }
 
 .mobile-menu-list {
   display: flex;

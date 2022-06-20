@@ -763,6 +763,9 @@ img {
 
 .menu-container {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   margin-left: auto;
   background-color: #FFFFFF;
   padding: 48px 15px 48px 40px;
@@ -773,14 +776,10 @@ img {
 
 .menu-container.is-open {
   display: block;
-  position: fixed;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100vw;
     max-height: 100vh;
     z-index: 10;
@@ -789,6 +788,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-container {
+    position: static;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -825,6 +825,41 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button.is-open {
+  left: 88%;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button.is-open {
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .menu-button.is-open {
+    position: fixed;
+    left: 83%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .menu-button.is-open {
+    left: 85%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .menu-button.is-open {
+    left: 87%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .menu-button.is-open {
+    left: 89%;
+  }
 }
 
 .mobile-menu-list {
@@ -877,9 +912,12 @@ img {
 }
 
 .hero-section {
+  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
   max-height: 400px;
   background-color: #2F303A;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero/hero-img_sm.jpg);
@@ -898,6 +936,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero/hero-img_md.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero/hero-img_md.jpg);
   }
@@ -912,9 +951,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    max-height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero/hero-img_lg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero/hero-img_lg.jpg);
   }
@@ -1074,7 +1114,6 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 50px 30px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1101,25 +1140,27 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 4px;
   background-color: #FFFFFF;
+  width: 100%;
   z-index: 100;
 }
 
 @media screen and (max-width: 478px) {
   .modal-wrapper {
-    width: 96%;
+    max-width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal-wrapper {
-    min-width: 450px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
-    min-width: 528px;
+    max-width: 528px;
   }
 }
 
@@ -2210,16 +2251,11 @@ img {
   line-height: 30px;
   letter-spacing: 0.06em;
   padding: 10px 56px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   cursor: pointer;
   border: none;
   border-radius: 4px;
