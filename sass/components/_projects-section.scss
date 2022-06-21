@@ -5,8 +5,6 @@
   }
 
 
-  outline: 1px solid salmon ;
-
   @media screen and (min-width: $tablet) {
     display: flex; 
     flex-wrap: wrap;
@@ -24,8 +22,6 @@
   @media screen and (min-width:$tablet) {
     margin: 15px;
 
-    
-  outline: 1px solid gold ;
   }
 
 }
