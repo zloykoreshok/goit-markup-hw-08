@@ -1,6 +1,11 @@
+
 .projects{
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (min-width:$tablet) {
+    margin: -15px;
+  }
+
+
+  outline: 1px solid salmon ;
 
   @media screen and (min-width: $tablet) {
     display: flex; 
@@ -8,12 +13,6 @@
     }
   }
   
-.priojects__container{
-  @media screen and (min-width:$tablet) {
-    margin: -15px;
-  }
-}
-
 .projects__item{
   margin-bottom: 30px;
 
@@ -24,7 +23,11 @@
 
   @media screen and (min-width:$tablet) {
     margin: 15px;
+
+    
+  outline: 1px solid gold ;
   }
+
 }
 
 .projects__link{
@@ -32,6 +35,10 @@
   max-width: 450px;
   list-style: none;
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   
   transition-property: box-shadow;
   transition-duration: $duration;
@@ -85,6 +92,7 @@
   display: block;
   width: 100%;
   height: 140px;
+  overflow: scroll;
   
   transform: translate(-50%, 125%);
   
@@ -119,6 +127,7 @@
   border-right: $gallery solid 1px;
   border-bottom: $gallery solid 1px; 
   max-width: 450px;
+  flex-grow: 1;
     
   @media screen and (min-width:$tablet) {
     max-width: 354px;
@@ -133,7 +142,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   margin-bottom: 4px; 
   color: $tuna;
 }

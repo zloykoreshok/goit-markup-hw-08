@@ -116,8 +116,7 @@
   text-align: center;
   cursor: pointer;
 
-  margin-bottom: 15px;
-  margin-right: 8px;
+
   padding: 6px 22px 6px 22px;
 
   transition-property: color, background-color, $box-shadow;
@@ -127,9 +126,7 @@
   color: $tuna;
   background-color: $whisper;
 
-  &:last-child{
-    margin-bottom: 0;  
-  }  
+ 
 
   &:hover,
   &:focus{
@@ -155,8 +152,6 @@
  
   cursor: pointer;
    
-  margin-right: 8px;
-  margin-bottom: 15px;
   padding: 6px 22px 6px 22px;
 
   color: $white;
