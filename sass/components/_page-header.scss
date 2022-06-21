@@ -67,7 +67,9 @@
   @media screen and (max-width:767px) {
     display: flex;
     flex-direction: column-reverse;
-    // margin-bottom: 64px;
+    margin-bottom: 64px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   @media screen and (min-width:$tablet){
@@ -91,6 +93,10 @@
 
   @media screen and (max-width:767px) {
     margin-bottom: 0;
+    &:last-child{
+      margin-bottom: 32px;
+    }
+    
   }
 
   @media screen and (min-width:$tablet){
@@ -119,6 +125,7 @@
 
   color: $boulder;
 
+  
   @media screen and (min-width: $tablet) {   
     font-weight: 500;
     font-size: 12px;
@@ -159,6 +166,9 @@
   // padding-bottom: 32px;
   color: $dodger-blue;
 
+  @media screen and (max-width: 767px) {
+    
+  }
 
   @media screen and (min-width: $tablet){ 
     font-weight: 500;

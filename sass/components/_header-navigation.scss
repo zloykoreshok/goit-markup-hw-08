@@ -50,27 +50,15 @@ outline: 1px solid red;
 }
   
 .nav__item{
-  // @media screen and (max-width: 767px) {
-  //   margin-bottom: 32px;
+  margin: 0;
+  padding: 0;
 
-  //   &:last-child{
-  //     margin-bottom: 0;
-  //   }
-  // }
-margin: 0;
-padding: 0;
-
-  @media screen and (min-width: $tablet){ 
-
-
-  }
-
-  @media screen and (min-width: $desktop) {
-
+  @media screen and (max-width: 767px) {
+      &:not(:last-child){
+      margin-bottom: 32px;
+    }
   }
 }
-
-
 
 .nav__link{
   font-weight: 500;
@@ -91,9 +79,7 @@ padding: 0;
       color: $dodger-blue;
     }
 
-@media screen and (ma) {
-  
-}
+
 
   @media screen and (min-width: $tablet){ 
     font-weight: 500;
@@ -120,7 +106,8 @@ padding: 0;
       background-color: $dodger-blue;
       
       position: absolute;
-      bottom: -31px;
+    
+      bottom: 0;
       left: 0;
     }   
   }
