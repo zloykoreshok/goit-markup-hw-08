@@ -13,9 +13,6 @@
   flex-wrap: wrap;
   margin-bottom: 25px;
 
-
-
-
   @media screen and (min-width: $tablet) {
     justify-content: center;
     margin-bottom: 30px;
@@ -38,9 +35,6 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
-
-
-
 }
   
 .filter-btn-container:last-child{
