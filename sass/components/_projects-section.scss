@@ -1,5 +1,4 @@
 .projects{
-  outline: 1px solid blue;
   margin: -15px;
 
   @media screen and (min-width: $tablet) {
@@ -9,9 +8,7 @@
   }
    
 .projects__item{
-
   margin: 15px;
-  outline: 1px solid red;
 
   &:hover,
   &:focus{
