@@ -4,8 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  margin-left: auto;
-  //  position: fixed;
+  // margin-left: auto;
   background-color: $white;
   padding: 48px 15px 48px 40px;
   text-align: center;
@@ -29,6 +28,13 @@
     display: flex;
   }
 } 
+
+.menu-container.is-open{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 
   // Header Menu Button
 

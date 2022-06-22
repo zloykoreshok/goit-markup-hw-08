@@ -11,7 +11,7 @@
 .portfolio__btn-list{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
     justify-content: center;
@@ -28,12 +28,16 @@
   margin-bottom: 15px;
   margin-right: 8px;
 
+  &:nth-child(n + 4) {
+    margin-bottom: 0;
+}
+
   &:last-child{
     margin-right: 0;
   }
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
+margin-bottom: 0;
   }
 }
   

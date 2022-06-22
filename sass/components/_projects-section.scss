@@ -9,9 +9,13 @@
     flex-wrap: wrap;
     }
   }
-  
+   
 .projects__item{
   margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
 
   &:hover,
   &:focus{
@@ -20,6 +24,7 @@
 
   @media screen and (min-width:$tablet) {
     margin: 15px;
+   
   }
 
 }
