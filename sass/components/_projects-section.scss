@@ -1,8 +1,6 @@
-
 .projects{
-  @media screen and (min-width:$tablet) {
-    margin: -15px;
-  }
+  outline: 1px solid blue;
+  margin: -15px;
 
   @media screen and (min-width: $tablet) {
     display: flex; 
@@ -11,22 +9,14 @@
   }
    
 .projects__item{
-  margin-bottom: 30px;
 
-    &:last-child{
-      margin-bottom: 0;
-    }
+  margin: 15px;
+  outline: 1px solid red;
 
   &:hover,
   &:focus{
     box-shadow: $projects-shadow;
   }
-
-  @media screen and (min-width:$tablet) {
-    margin: 15px;
-   
-  }
-
 }
 
 .projects__link{
